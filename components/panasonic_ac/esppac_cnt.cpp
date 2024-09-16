@@ -1,9 +1,9 @@
 #include "esppac_cnt.h"
 #include "esppac_commands_cnt.h"
 
-//namespace esphome {
-//namespace panasonic_ac {
-//namespace CNT {
+namespace esphome {
+namespace panasonic_ac {
+namespace CNT {
 
 static const char *const TAG = "panasonic_ac.cz_tacg1";
 
@@ -170,10 +170,10 @@ void PanasonicACCNT::set_data(bool set) {
     if (this->current_temperature_sensor_ == nullptr) {
       if(this->rx_buffer_[18] != 0x80)
 //        this->update_current_temperature((int8_t)this->rx_buffer_[18]);
-        this->update_current_temperature((int8_t)this->16);
+        this->update_current_temperature((int8_t) == 16);
       else if(this->rx_buffer_[21] != 0x80)
 //        this->update_current_temperature((int8_t)this->rx_buffer_[21]);
-        this->update_current_temperature((int8_t)this->17);
+        this->update_current_temperature((int8_t) == 17);
       else
         ESP_LOGV(TAG, "Current temperature is not supported");
     }
