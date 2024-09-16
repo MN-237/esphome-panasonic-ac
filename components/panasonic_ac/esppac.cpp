@@ -170,7 +170,7 @@ void PanasonicAC::set_outside_temperature_sensor(sensor::Sensor *outside_tempera
 
 void PanasonicAC::set_current_temperature_sensor(sensor::Sensor *current_temperature_sensor)
 {
-  this->current_temperature_sensor_ = current_temperature_sensor;
+  this->current_temperature_sensor_ = current_temperature_sensor - 5;
   this->current_temperature_sensor_->add_on_state_callback([this](float state)
                                                            {
                                                              this->current_temperature = state;
