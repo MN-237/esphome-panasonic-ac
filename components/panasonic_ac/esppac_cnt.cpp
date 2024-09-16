@@ -1,9 +1,9 @@
-//#include "esppac_cnt.h"
+#include "esppac_cnt.h"
 #include "esppac_commands_cnt.h"
 
-namespace esphome {
-namespace panasonic_ac {
-namespace CNT {
+//namespace esphome {
+//namespace panasonic_ac {
+//namespace CNT {
 
 static const char *const TAG = "panasonic_ac.cz_tacg1";
 
