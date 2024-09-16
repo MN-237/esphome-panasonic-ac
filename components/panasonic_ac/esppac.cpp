@@ -76,7 +76,7 @@ void PanasonicAC::update_current_temperature(int8_t temperature) {
     return;
   }
 
-  this->current_temperature = temperature;
+  this->current_temperature = temperature - 15;
 }
 
 void PanasonicAC::update_target_temperature(uint8_t raw_value) {
