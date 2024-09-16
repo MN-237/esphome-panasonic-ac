@@ -1,7 +1,7 @@
 #include "esppac_cnt.h"
 #include "esppac_commands_cnt.h"
 
-namespace esphome {
+//namespace esphome {
 namespace panasonic_ac {
 namespace CNT {
 
