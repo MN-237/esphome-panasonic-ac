@@ -169,9 +169,9 @@ void PanasonicACCNT::set_data(bool set) {
     // 128 means not supported
     if (this->current_temperature_sensor_ == nullptr) {
       if(this->rx_buffer_[18] != 0x80)
-        this->update_current_temperature((int8_t)this->rx_buffer_[18]);
+        this->update_current_temperature((int8_t)this->rx_buffer_[18] - 5);
       else if(this->rx_buffer_[21] != 0x80)
-        this->update_current_temperature((int8_t)this->rx_buffer_[21]);
+        this->update_current_temperature((int8_t)this->rx_buffer_[21] - 5);
       else
         ESP_LOGV(TAG, "Current temperature is not supported");
     }
