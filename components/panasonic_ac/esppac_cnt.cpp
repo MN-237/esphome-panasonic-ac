@@ -1,4 +1,4 @@
-#include "esppac_cnt.h"
+//#include "esppac_cnt.h"
 #include "esppac_commands_cnt.h"
 
 namespace esphome {
